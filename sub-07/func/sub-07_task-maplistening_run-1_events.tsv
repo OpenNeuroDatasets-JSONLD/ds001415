@@ -1,0 +1,14 @@
+onset	duration	trial_type	task	response_type	stim_file	correct_answer	answer	is_correct	sparse
+2.5062	55.9857	concurrent	listen	n/a	sounds/track4.wav	n/a	n/a	n/a	5.0062
+65.5199	5.5905	concurrent	response	memory	n/a	black	red	false	68.0199
+86.5189	55.9812	augmented	listen	n/a	sounds/track11.wav	n/a	n/a	n/a	89.0189
+149.5169	4.0677	augmented	response	active	sounds/track11.wav	black	black	true	152.0169
+163.5322	55.9806	augmented	listen	n/a	sounds/track9.wav	n/a	n/a	n/a	166.0322
+226.5294	4.284	augmented	response	memory	n/a	black	black	true	229.0294
+240.5277	55.9857	sequential	listen	n/a	sounds/track18.wav	n/a	n/a	n/a	243.0277
+303.5083	5.5524	sequential	response	active	sounds/track18.wav	red	red	true	306.0083
+324.5239	55.9787	sequential	listen	n/a	sounds/track16.wav	n/a	n/a	n/a	327.0239
+387.5213	1.6687	sequential	response	memory	n/a	red	red	true	390.0213
+401.5198	55.9775	concurrent	listen	n/a	sounds/track5.wav	n/a	n/a	n/a	404.0198
+464.5172	11.2851	concurrent	response	active	sounds/track5.wav	red	red	true	467.0172
+	
