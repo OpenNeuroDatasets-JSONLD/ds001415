@@ -24,15 +24,7 @@ Scripts that created the experimental stimuli and automated the execution of the
 
 Processing Applied to fMRI Images
 ==================================
-Conversion of the DICOM files produced by the scanner to NiFTi format was 
-performed by MRIConvert (LCNI).  Orientation to standard axes was performed 
-and recorded in the NiFTi header (FMRIB, fslreorient2std).  The excess slices 
-in the anatomical images that represented tissue in the next were trimmed 
-(FMRIB, robustfov).  Participant identity was protected through automated 
-defacing of the anatomical data (FreeSurfer, mri_deface), with additional 
-post-processing to ensure that no brain voxels were erroneously removed from 
-the image (FMRIB, BET; brain mask dilated with three iterations 
-"fslmaths -dilM"). 
+Conversion of the DICOM files produced by the scanner to NiFTi format was performed by MRIConvert (LCNI).  Orientation to standard axes was performed and recorded in the NiFTi header (FMRIB, fslreorient2std).  The excess slices in the anatomical images that represented tissue in the next were trimmed (FMRIB, robustfov).  Participant identity was protected through automated defacing of the anatomical data (FreeSurfer, mri_deface), with additional post-processing to ensure that no brain voxels were erroneously removed from the image (FMRIB, BET; brain mask dilated with three iterations "fslmaths -dilM"). 
 
 Neuroimaging data is sorted by participant and image type:
 	"sub-NN/anat"
@@ -42,22 +34,14 @@ Neuroimaging data is sorted by participant and image type:
 
 Preparation of Metadata
 ========================
-The dcm2niix tool (Rorden) was used to create draft JSON sidecar files 
-with metadata extracted from the DICOM headers. The draft sidecar file were 
-revised to augment the JSON elements with additional tags (e.g., "Orientation"
-and "TaskDescription") and to make a more human-friendly version of tag 
-contents (e.g., "InstitutionAddress" and "DepartmentName").  The device serial 
-number was constant throughout the data collection (i.e., all data collection 
-was conducted on the same scanner), and the respective metadata values were 
-replaced with an anonymous identifier: "Scanner1".  
+The dcm2niix tool (Rorden) was used to create draft JSON sidecar files with metadata extracted from the DICOM headers. The draft sidecar file were revised to augment the JSON elements with additional tags (e.g., "Orientation" and "TaskDescription") and to make a more human-friendly version of tag contents (e.g., "InstitutionAddress" and "DepartmentName").  The device serial number was constant throughout the data collection (i.e., all data collection was conducted on the same scanner), and the respective metadata values were replaced with an anonymous identifier: "Scanner1".  
 
 Metadata are co-located with the files that they describe.
 
 
 Extraction and Formatting of Behavioral Data
 ============================================
-Stimuli were presented using PsychoPy (Peirce, 2007), which produced log files
-from which event details were extracted.  
+Stimuli were presented using PsychoPy (Peirce, 2007), which produced log files from which event details were extracted.  
 
 Log files are available in "sourcedata/behavioral".
 Extracted event details accompany BOLD images in "sub-NN/func/*events.tsv".
