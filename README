@@ -8,30 +8,21 @@ The behavioral task consisted of listening to an auditory representation of geos
 
 Data was collected in accordance with a protocol approved by the Institutional Review Board at the University of Oregon.
 
-Additional details about the specific maps used in this are available through ScholarsBank (https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122).
+- Additional details about the specific maps used in this are available through ScholarsBank (https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122).
 
-Details of the design process and evaluation are provided in 
-the associated dissertation (https://scholarsbank.uoregon.edu/xmlui/handle/1794/24538).
+- Details of the design process and evaluation are provided in the associated dissertation (https://scholarsbank.uoregon.edu/xmlui/handle/1794/24538).
 
-Scripts that created the experimental stimuli and automated the execution of the processing steps described below are available through ScholarsBank (https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122).
+- Scripts that created the experimental stimuli and automated the execution of the processing steps described below are available through ScholarsBank (https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122).
 
 
 Processing Applied to fMRI Images
 ==================================
 Conversion of the DICOM files produced by the scanner to NiFTi format was performed by MRIConvert (LCNI).  Orientation to standard axes was performed and recorded in the NiFTi header (FMRIB, fslreorient2std).  The excess slices in the anatomical images that represented tissue in the next were trimmed (FMRIB, robustfov).  Participant identity was protected through automated defacing of the anatomical data (FreeSurfer, mri_deface), with additional post-processing to ensure that no brain voxels were erroneously removed from the image (FMRIB, BET; brain mask dilated with three iterations "fslmaths -dilM"). 
 
-Neuroimaging data is sorted by participant and image type:
-	"sub-NN/anat"
-	"sub-NN/fmap"
-	"sub-NN/func"
-
 
 Preparation of Metadata
 ========================
 The dcm2niix tool (Rorden) was used to create draft JSON sidecar files with metadata extracted from the DICOM headers. The draft sidecar file were revised to augment the JSON elements with additional tags (e.g., "Orientation" and "TaskDescription") and to make a more human-friendly version of tag contents (e.g., "InstitutionAddress" and "DepartmentName").  The device serial number was constant throughout the data collection (i.e., all data collection was conducted on the same scanner), and the respective metadata values were replaced with an anonymous identifier: "Scanner1".  
-
-Metadata are co-located with the files that they describe.
-
 
 Extraction and Formatting of Behavioral Data
 ============================================
