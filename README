@@ -6,20 +6,19 @@ Participants completed a training session in a computer-lab setting, where they 
 
 The behavioral task consisted of listening to an auditory representation of geospatial data ("map"), and then making a decision about the relative values of data at two specified locations.  After listening to the map ("listen"), a graphic depicted two locations within a square (white background).  Each location was marked with a small square (size: 2x2 grid cells); one square was symbolized with a black solid outline and transparent black fill, the other was symbolized with a red dashed outline and transparent red fill.  The decision ("response") was made under one of two balanced conditions.  Under the active listening condition ("active") the map was played a second time while participants made their decision; in the memory condition ("memory"), a decision was made in relative quiet (the scanner noises and intermittent acquisition noise persisted).  During the initial map listening, participants were aware of neither the locations of the response options within the map extent, nor the response conditions under which they would make their decision.  Participants could response any time after the graphic was displayed; once a response was entered, the playback stopped (active response condition only) and the presentation continued to the next trial.
 
-Additional details about the specific maps used in this are available from 
-[REPLACE ScholarsBank DOI]...
-Listed response options met the criteria that:
-- the four continuous block (2x2) of grid cells shared the same data value, 
-- one option had data value "high" and the other had data value "low",
+Additional details about the specific maps used in this are available through ScholarsBank (https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122).
+Criteria for response options included: 
+- a block of four continuous grid cells (2x2) shared the same data value, 
+- the value was "high" in one block and "low" in the other,
 - the two response options were offset both horizontally and vertically,
-- the black option was to the west (left) of the red option.
+- the response option toward the west (left) was colored black; the response toward the east was colored red.
 
 Data was collected in accordance with a protocol approved by the Institutional Review Board at the University of Oregon.
 
 Details of the design process and evaluation are provided in 
-[REPLACE dissertation DOI].
+the associated dissertation (https://scholarsbank.uoregon.edu/xmlui/handle/1794/24538).
 
-Scripts that created the experimental stimuli and automated the execution of the processing steps described below are available from [REPLACE ScholarsBank URL].
+Scripts that created the experimental stimuli and automated the execution of the processing steps described below are available through ScholarsBank (https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122).
 
 
 Processing Applied to fMRI Images
@@ -74,4 +73,3 @@ R
 
 Rorden, C. dcm2niix, v1.0.20171215, Available: 
 	https://github.com/rordenlab/dcm2niix
-
