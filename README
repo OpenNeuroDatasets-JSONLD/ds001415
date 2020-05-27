@@ -8,7 +8,7 @@ The task consisted of listening to an auditory representation of geospatial data
 
 Data was collected in accordance with a protocol approved by the Institutional Review Board at the University of Oregon.
 
-- Additional details about the specific maps used in this are available through University of Oregon's [ScholarsBank](https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122) (DOI [10.7264/3b49-tr85](https://doi.org/10.7264/3b49-tr85).
+- Additional details about the specific maps used in this are available through University of Oregon's [ScholarsBank](https://scholarsbank.uoregon.edu/xmlui/handle/1794/25122) (DOI [10.7264/3b49-tr85](https://doi.org/10.7264/3b49-tr85)).
 
 - Details of the design process and evaluation are provided in the associated dissertation, which is available from [ProQuest](https://pqdtopen.proquest.com/pubnum/13420194.html) and University of Oregon's [ScholarsBank](https://scholarsbank.uoregon.edu/xmlui/handle/1794/24538).
 
@@ -22,16 +22,18 @@ Conversion of the DICOM files produced by the scanner to NiFTi format was perfor
 The dcm2niix tool (Rorden) was used to create draft JSON sidecar files with metadata extracted from the DICOM headers. The draft sidecar file were revised to augment the JSON elements with additional tags (e.g., "Orientation" and "TaskDescription") and to make a more human-friendly version of tag contents (e.g., "InstitutionAddress" and "DepartmentName").  The device serial number was constant throughout the data collection (i.e., all data collection was conducted on the same scanner), and the respective metadata values were replaced with an anonymous identifier: "Scanner1".  
 
 ### Preparation of Behavioral Data
-Stimuli were presented using PsychoPy (Peirce, 2007), which produced log files from which event details were extracted.  
+The stimuli consisted of eightteen auditory maps.  Spatial data were generated with the rgeos, sp, and spatstat libraries in R; auditory maps were rendered with the Pyo (Belanger) library for Python and prepared for presentation in Audacity.  Stimuli were presented using PsychoPy (Peirce, 2007), which produced log files from which event details were extracted.  The log files included timestamped entries for stimulus timing and trigger pulses from the scanner. 
 
-Log files are available in "sourcedata/behavioral".
-Extracted event details accompany BOLD images in "sub-NN/func/*events.tsv".
-Three column explanatory variable files are in "derivatives/ev/sub-NN".
+- Log files are available in "sourcedata/behavioral".
+- Extracted event details accompany BOLD images in "sub-NN/func/*events.tsv".
+- Three column explanatory variable files are in "derivatives/ev/sub-NN".
 
 
 References
 ===========
-Audacity
+Audacity® software is copyright © 1999-2018 Audacity Team. Web site: 
+	https://audacityteam.org/. The name Audacity® is a registered trademark of 
+	Dominic Mazzoni.
 
 FMRIB (Functional Magnetic Resonance Imaging of the Brain). FMRIB Software 
 	Library (FSL; fslreorient2std, robustfov, BET).  Oxford, v5.0.9, Available:
@@ -47,11 +49,24 @@ LCNI (Lewis Center for Neuroimaging). MRIConvert (mcverter), v2.1.0 build 440,
 Peirce, JW. PsychoPy–psychophysics software in Python. Journal of Neuroscience 
 	Methods, 162(1–2):8 – 13, 2007. Software Available: http://www.psychopy.org/
 
-Python
+Python software is copyright © 2001-2015 Python Software Foundation. Web site: 
+	https://www.python.org
 
-Pyo
+Pyo software is copyright © 2009-2015 Olivier Belanger. Web site: 
+	http://ajaxsoundstudio.com/software/pyo/.
 
-R
+R Core Team (2016). R: A language and environment for statistical computing. R 
+    Foundation for Statistical Computing, Vienna, Austria. Available: 
+    https://www.R-project.org/.
+
+rgeos software is copyright © 2016 Bivand and Rundel. Web site: 
+	https://CRAN.R-project.org/package=rgeos
 
 Rorden, C. dcm2niix, v1.0.20171215, Available: 
 	https://github.com/rordenlab/dcm2niix
+
+spatstat software is copyright © 2016 Baddeley, Rubak, and Turner. Web site: 
+	https://CRAN.R-project.org/package=spatstat
+
+sp software is copyright © 2016 Pebesma and Bivand. Web site:
+ 	https://CRAN.R-project.org/package=sp
