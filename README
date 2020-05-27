@@ -31,42 +31,26 @@ The stimuli consisted of eightteen auditory maps.  Spatial data were generated w
 
 References
 ===========
-Audacity® software is copyright © 1999-2018 Audacity Team. Web site: 
-	https://audacityteam.org/. The name Audacity® is a registered trademark of 
-	Dominic Mazzoni.
+Audacity® software is copyright © 1999-2018 Audacity Team. Web site: https://audacityteam.org/. The name Audacity® is a registered trademark of Dominic Mazzoni.
 
-FMRIB (Functional Magnetic Resonance Imaging of the Brain). FMRIB Software 
-	Library (FSL; fslreorient2std, robustfov, BET).  Oxford, v5.0.9, Available:
-	https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/
+FMRIB (Functional Magnetic Resonance Imaging of the Brain). FMRIB Software Library (FSL; fslreorient2std, robustfov, BET).  Oxford, v5.0.9, Available: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/
 	
-FreeSurfer (mri_deface). Harvard, v1.22, Available: 
-	https://surfer.nmr.mgh.harvard.edu/fswiki/AutomatedDefacingTools)
+FreeSurfer (mri_deface). Harvard, v1.22, Available: https://surfer.nmr.mgh.harvard.edu/fswiki/AutomatedDefacingTools)
 
-LCNI (Lewis Center for Neuroimaging). MRIConvert (mcverter), v2.1.0 build 440, 
-	Available: 
-	https://lcni.uoregon.edu/downloads/mriconvert/mriconvert-and-mcverter
+LCNI (Lewis Center for Neuroimaging). MRIConvert (mcverter), v2.1.0 build 440, Available: https://lcni.uoregon.edu/downloads/mriconvert/mriconvert-and-mcverter
 
-Peirce, JW. PsychoPy–psychophysics software in Python. Journal of Neuroscience 
-	Methods, 162(1–2):8 – 13, 2007. Software Available: http://www.psychopy.org/
+Peirce, JW. PsychoPy–psychophysics software in Python. Journal of Neuroscience Methods, 162(1–2):8 – 13, 2007. Software Available: http://www.psychopy.org/
 
-Python software is copyright © 2001-2015 Python Software Foundation. Web site: 
-	https://www.python.org
+Python software is copyright © 2001-2015 Python Software Foundation. Web site: https://www.python.org
 
-Pyo software is copyright © 2009-2015 Olivier Belanger. Web site: 
-	http://ajaxsoundstudio.com/software/pyo/.
+Pyo software is copyright © 2009-2015 Olivier Belanger. Web site: http://ajaxsoundstudio.com/software/pyo/.
 
-R Core Team (2016). R: A language and environment for statistical computing. R 
-    Foundation for Statistical Computing, Vienna, Austria. Available: 
-    https://www.R-project.org/.
+R Core Team (2016). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. Available: https://www.R-project.org/.
 
-rgeos software is copyright © 2016 Bivand and Rundel. Web site: 
-	https://CRAN.R-project.org/package=rgeos
+rgeos software is copyright © 2016 Bivand and Rundel. Web site: https://CRAN.R-project.org/package=rgeos
 
-Rorden, C. dcm2niix, v1.0.20171215, Available: 
-	https://github.com/rordenlab/dcm2niix
+Rorden, C. dcm2niix, v1.0.20171215, Available: https://github.com/rordenlab/dcm2niix
 
-spatstat software is copyright © 2016 Baddeley, Rubak, and Turner. Web site: 
-	https://CRAN.R-project.org/package=spatstat
+spatstat software is copyright © 2016 Baddeley, Rubak, and Turner. Web site: https://CRAN.R-project.org/package=spatstat
 
-sp software is copyright © 2016 Pebesma and Bivand. Web site:
- 	https://CRAN.R-project.org/package=sp
+sp software is copyright © 2016 Pebesma and Bivand. Web site: https://CRAN.R-project.org/package=sp
