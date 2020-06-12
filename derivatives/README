@@ -1,0 +1,40 @@
+Derivatives are provided for convenience, but could be re-produced from the
+sourcedata and/or image files.  Scripts that prepared these derivatives are 
+available from UO Scholars Bank at https://doi.org/10.7264/3b49-tr85.
+
+
+Fieldmap
+========
+The computed fieldmap files were produced with the FSL utilities 
+fsl_prepare_fieldmap, fslmaths, and BET.
+
+fieldmap/sub-NN/sub-NN_rads.nii.gz
+	Computed fieldmap in radians/second to apply B0 unwarping
+
+fieldmap/sub-NN/sub-NN_mag_brain.nii.gz
+	Brain extracted distortion magnitude image
+
+
+Explanatory Variables
+=====================
+Stimulus timing information extracted from log files and formatted in three
+column format for use in FSL (FMRIB).  There is one for each audio type - 
+sequential, "augmented" (i.e., augmented-sequential), and concurrent - and for 
+each run (1 or 2).  The timing is unique to each participant and run, as the 
+order of trials was randomized.  A simplified (relative to the full PsychoPy 
+(Peirce 2007) output; see "sourcedata") summary of all events is provided in 
+evDetails.csv.
+
+ev/sub-NN/<audio type><run>-listen.ev
+ev/sub-NN/evDetails.csv
+
+
+References
+===========
+FMRIB (Functional Magnetic Resonance Imaging of the Brain). FMRIB Software 
+	Library (FSL; fsl_prepare_fieldmap, fslmaths, BET, FEAT).  Oxford, v5.0.9, 
+	Available: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/
+
+Peirce, JW. PsychoPy–psychophysics software in Python. Journal of Neuroscience 
+	Methods, 162(1–2):8 – 13, 2007. Software Available: http://www.psychopy.org/
+
