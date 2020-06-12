@@ -1,0 +1,17 @@
+Scripts that created and rendered the experimental stimuli and alternative
+formats of those stimuli are available from UO Scholars Bank at 
+https://doi.org/10.7264/3b49-tr85.
+
+stimuli/sounds.json
+	Description of the fields included in the *.tsv tabular data
+	
+stimuli/sounds.tsv
+	Stimulus details, including the location of target locations used in the
+	behavioral task
+	
+stimuli/trackN.wav
+	Wav files containing auditory representations of spatial data with six 
+	instances in each of the three audio types: 
+		Tracks 1-6: concurrent
+		Tracks 7-12: augmented-sequential
+		Tracks 13-18: sequential
