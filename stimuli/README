@@ -10,16 +10,13 @@ stimuli/sounds.tsv
 	behavioral task
 	
 stimuli/sounds
-	Filenames: trackN.wav
+	Filenames: trackNN.wav
 	Wav files containing auditory representations of spatial data with six 
 	instances in each of the three audio types: 
-		Tracks 1-6: concurrent
-		Tracks 7-12: augmented-sequential
+		Tracks 01-06: concurrent
+		Tracks 07-12: augmented-sequential
 		Tracks 13-18: sequential
-		
-	(Single digit numbers in the filename do not have zero-padding; contrast
-	to the naming convention used in the UO Scholars Bank record)
-	
+			
 stimuli/images
 	A collection of graphic icons used in the visual presentation of task
 	prompts.
