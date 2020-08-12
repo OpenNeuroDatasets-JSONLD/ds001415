@@ -1,0 +1,67 @@
+{
+	"track":{
+		"LongName":"Track",
+		"Description":"Instance of an auditory map used as a stimulus"
+	},
+	"session":{
+		"LongName":"Session Type",
+		"Description":"Session during which the stimulus was presented",
+		"Levels":{
+			"1":"train",
+			"2":"scan"
+		}
+	},
+	"map_type":{
+		"LongName":"Map Type",
+		"Description":"Map type that was an experimental condition and descriptive of the temporal arrangement of data within the auditory stream",
+		"Levels":{
+			"1":"concurrent",
+			"2":"augmented",
+			"3":"sequential"
+		}
+	},
+	"response_type":{
+		"LongName":"Response Type",
+		"Description":"The behavioral task was presented in two forms, one in which decisions were made while listening to the map and one in which decisions were made from memory.  During the initial map listening, participants were not aware of the subsequent response type.",
+		"Levels":{
+			"1":"active",
+			"2":"memory"
+		}
+	},
+	"set":{
+		"LongName":"Stimulus set",
+		"Description":"Stimulus set (two sets, one for each functional run in the scanning session) to which the track belongs; map characteristics were balanced across sets; presentation order within set randomized by participant.  A single (unique) set of stimuli was used in the training session, indicated in this column with 'n/a'.",
+		"Levels":{
+			"1":"A",
+			"2":"B"
+		}
+	},
+	"blackX":{
+		"LongName":"Black X-coordinate",
+		"Description":"Horizontal position of the black response option; center=(0,0)",
+		"Units":"Raster grid cells"
+	},
+	"blackY":{
+		"LongName":"Black Y-coordinate",
+		"Description":"Vertical position of the black response option; center=(0,0)",
+		"Units":"Raster grid cells"
+	},
+	"redX":{
+		"LongName":"Red X-coordinate",
+		"Description":"Horizontal position of the red response option; center=(0,0)",
+		"Units":"Raster grid cells"
+	},
+	"redY":{
+		"LongName":"Red Y-coordinate",
+		"Description":"Vertical position of the red response option; center=(0,0)",
+		"Units":"Raster grid cells"
+	},
+	"isHigher":{
+		"LongName":"Higher Data Value",
+		"Description":"Response Option with Higher Data Value, i.e., 'correct' answer",
+		"Levels":{
+			"1":"black",
+			"2":"red"
+		}
+	}
+}
